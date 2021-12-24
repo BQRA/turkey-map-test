@@ -1,7 +1,7 @@
 
   function GetMap() {
     var city = $('#turkey-map').data('city') == undefined ? 'turkey' : $('#turkey-map').data('city');
-    $.get('http://ofisarama.com/turkey/source/' + city + '.svg', function(data) {
+    $.get('http://bqra.github.io/' + city + '.svg', function(data) {
       $('#turkey-map').append('<div class="map-container">' + data + '</div>');
       $('.map-container').append('<div class="map-title"><span class="map-close"></span><strong></strong></div>');
 
